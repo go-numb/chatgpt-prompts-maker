@@ -2,6 +2,7 @@
 
 This package creates instructions that give CHATGPT various roles.
 
+via [ awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
 
 ## Usage
 
