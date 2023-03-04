@@ -38,6 +38,16 @@ func main() {
 		log.Fatal(err)
 	}
 
+	// set history
+	his = append(his, gogpt.ChatCompletionMessage{
+		Role:    "user",
+		Content: prompt,
+	})
+	his = append(his, gogpt.ChatCompletionMessage{
+		Role:    "assistant",
+		Content: res.Choices[0].Message.Content,
+	})
+
 	fmt.Println(res)
 }
 
@@ -48,6 +58,6 @@ func load() {
 
 	for i := 0; i < len(acts); i++ {
 		s = strings.ReplaceAll(acts[i].Actor, " ", "")
-		fmt.Println(s)
+		fmt.Println(s, acts[i].Prompt)
 	}
 }
