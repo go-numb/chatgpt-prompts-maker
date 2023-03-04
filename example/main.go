@@ -3,8 +3,10 @@ package main
 import (
 	"context"
 	"fmt"
-	"prompts"
+	"log"
 	"strings"
+
+	"prompts"
 
 	gogpt "github.com/sashabaranov/go-gpt3"
 )
@@ -33,7 +35,7 @@ func main() {
 
 	res, err := gpt.CreateChatCompletion(context.Background(), req)
 	if err != nil {
-		return err.Error()
+		log.Fatal(err)
 	}
 
 	fmt.Println(res)
