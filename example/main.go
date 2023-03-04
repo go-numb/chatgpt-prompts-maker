@@ -6,7 +6,7 @@ import (
 	"log"
 	"strings"
 
-	"prompts"
+	prompts "github.com/go-numb/chatgpt-prompts-maker"
 
 	gogpt "github.com/sashabaranov/go-gpt3"
 )

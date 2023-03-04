@@ -1,4 +1,4 @@
-module prompts
+module github.com/go-numb/chatgpt-prompts-maker
 
 go 1.20
 
