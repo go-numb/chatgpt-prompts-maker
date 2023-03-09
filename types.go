@@ -1,9 +1,9 @@
 package prompts
 
-type typeN int
+type TypeN int
 
 const (
-	_ typeN = iota
+	_ TypeN = iota
 	ActorLinuxTerminal
 	ActorEnglishTranslatorandImprover
 	ActorPositionInterviewer

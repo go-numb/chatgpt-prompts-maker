@@ -3,7 +3,7 @@ package prompts
 import "fmt"
 
 type Order struct {
-	Type typeN
+	Type TypeN
 	Acts []Act
 
 	// Character
