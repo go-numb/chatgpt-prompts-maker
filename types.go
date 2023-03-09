@@ -3,8 +3,7 @@ package prompts
 type TypeN int
 
 const (
-	_ TypeN = iota
-	ActorLinuxTerminal
+	ActorLinuxTerminal TypeN = iota
 	ActorEnglishTranslatorandImprover
 	ActorPositionInterviewer
 	ActorJavaScriptConsole

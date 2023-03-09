@@ -1,9 +1,7 @@
 package prompts
 
 import (
-	"fmt"
 	"log"
-	"strings"
 
 	"github.com/gocarina/gocsv"
 )
@@ -14,13 +12,8 @@ type Act struct {
 }
 
 func Load() []Act {
-	str := strings.Split(data, "\n")
-	for i := 0; i < len(str); i++ {
-		fmt.Println(str[i])
-	}
-
 	acts := make([]Act, 0)
-	if err := gocsv.UnmarshalString(strings.Join(str, "\n"), &acts); err != nil {
+	if err := gocsv.UnmarshalString(data, &acts); err != nil {
 		log.Println(err)
 		return nil
 	}
